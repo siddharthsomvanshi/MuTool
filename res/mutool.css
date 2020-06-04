@@ -1,0 +1,218 @@
+/* this responsible for the look and feel of the application
+   modification makes imbalance in the application
+   last modified by S.somvanshi at 21 dec 2017 -- 10:30pm
+ */
+.list-view .scroll-bar:horizontal,
+.list-view .scroll-bar:vertical
+{
+    -fx-background-color: transparent;
+}
+.list-view .scroll-bar:horizontal .increment-button,
+.list-view .scroll-bar:vertical .increment-button{
+    visibility: hidden;
+}
+.list-view .scroll-bar:horizontal .decrement-button,
+.list-view .scroll-bar:vertical .decrement-button{
+    visibility: hidden;
+}
+.list-view .scroll-bar:horizontal .track,
+.list-view .scroll-bar:vertical .track {
+    visibility: hidden;
+}
+.list-view .scroll-bar:horizontal .thumb,
+.list-view .scroll-bar:vertical .thumb{
+    -fx-background-color: white;
+    border-radius: 100px;
+}
+.list-view .scroll-bar:horizontal,
+.list-view .scroll-bar:vertical
+{
+    -fx-background-color: transparent;
+}
+/*text area */
+.text-area .scroll-bar:horizontal .increment-button,
+.text-area .scroll-bar:vertical .increment-button{
+    visibility: hidden;
+}
+.text-area .scroll-bar:horizontal .decrement-button,
+.text-area .scroll-bar:vertical .decrement-button{
+    visibility: hidden;
+}
+.text-area .scroll-bar:horizontal .track,
+.text-area .scroll-bar:vertical .track {
+    visibility: hidden;
+}
+.text-area .scroll-bar:horizontal .thumb,
+.text-area .scroll-bar:vertical .thumb{
+    -fx-background-color: white;
+    border-radius: 100px;
+}
+/*web view */
+.web-view .scroll-bar:horizontal .increment-button,
+.web-view .scroll-bar:vertical .increment-button{
+    visibility: hidden;
+}
+.web-view .scroll-bar:horizontal .decrement-button,
+.web-view .scroll-bar:vertical .decrement-button{
+    visibility: hidden;
+}
+.web-view .scroll-bar:horizontal .track,
+.web-view .scroll-bar:vertical .track {
+    visibility: hidden;
+}
+.web-view .scroll-bar:horizontal .thumb,
+.web-view .scroll-bar:vertical .thumb{
+    -fx-background-color: white;
+    border-radius: 100px;
+}
+@font-face {
+    -fx-font-family:seg;
+    -fx-src:url('default.ttf');
+}
+#back{
+    -fx-background-color:black;
+}
+#menubar{
+    -fx-background-color:white;
+}
+#mbitem1{
+    -fx-text-fill:white;
+    -fx-background-color: white;
+    -fx-color:white;
+    -fx-font-family:seg;
+    -fx-font-size: 12px;
+}
+#mbitem1:hover{
+    -fx-background-color: red;
+    -fx-font-family:seg;
+    -fx-opacity:0.9;
+}
+#mbitem2{
+    -fx-text-fill:white;
+    -fx-background-color: white;
+    -fx-color:white;
+    -fx-font-family:seg;
+    -fx-font-size: 12px;
+}
+#mbitem2:hover{
+    -fx-background-color: red;
+    -fx-font-family:seg;
+    -fx-opacity:0.9;
+}
+#mbitem3{
+    -fx-text-fill:white;
+    -fx-background-color: white;
+    -fx-color:white;
+    -fx-font-family:seg;
+    -fx-font-size: 12px;
+}
+#mbitem3:hover{
+    -fx-background-color: red;
+    -fx-font-family:seg;
+    -fx-opacity:0.9;
+}
+#mbitem4{
+    -fx-text-fill:white;
+    -fx-background-color: white;
+    -fx-color:white;
+    -fx-font-family:seg;
+    -fx-font-size: 12px;
+}
+#mbitem4:hover{
+    -fx-background-color: red;
+    -fx-font-family:seg;
+    -fx-opacity:0.9;
+}
+#textarea{
+    -fx-background-color: black;
+    -fx-opacity:1;
+    -fx-position-shape: true;
+    -fx-text-fill:black;
+    -fx-font-family:seg;
+}
+#player{
+-fx-background-color: transparent;
+}
+#statusbar{
+    -fx-background-color: white;
+}
+#webview:focused{
+    -fx-effect:dropshadow(two-pass-box,black,5,0,0,0);
+}
+#editortb{
+
+}
+#totaltime{
+    -fx-font-family: seg;
+    -fx-text-fill: white;
+}
+#currenttime{
+    -fx-font-family: seg;
+    -fx-text-fill: white;
+}
+#playlist{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+.list-cell:even{
+    -fx-background-color:transparent;
+    -fx-text-fill: white;
+    -fx-font-family: seg;
+}
+.list-cell:odd{
+    -fx-background-color:transparent;
+    -fx-text-fill: white;
+    -fx-font-family: seg;
+}
+#artistn{
+    -fx-text-fill: white;
+    -fx-background-color: lightgray;
+    -fx-font-family: seg;
+    -fx-font-size: 20;
+    -fx-opacity:0.95;
+}
+#name{
+    -fx-text-fill: white;
+    -fx-background-color: lightgray;
+    -fx-font-family: seg;
+    -fx-opacity:0.95;
+    -fx-font-size:25;
+}
+#volumetxt{
+    -fx-text-fill: white;
+    -fx-background-color: transparent;
+    -fx-font-family: seg;
+    -fx-font-size: 10;
+}
+#playpause{
+    -fx-background-color: transparent;
+    -fx-background-image: url("pause.png");
+    -fx-background-size: contain;
+    -fx-min-height: 65;
+    -fx-min-width: 70;
+
+}
+#previous{
+    -fx-background-color: transparent;
+    -fx-background-image: url("previous.png");
+    -fx-background-size: contain;
+    -fx-min-height: 45;
+    -fx-min-width: 48;
+
+
+}
+#next{
+    -fx-background-color: transparent;
+    -fx-background-image: url("next.png");
+    -fx-background-size: contain;
+    -fx-min-height: 45;
+    -fx-min-width: 48;
+}
+.slider .track{
+    -fx-background-color: white;
+    -fx-opacity: 0.3;
+}
+.slider .thumb{
+    -fx-background-color: white;
+    -fx-opacity: 1;
+}
